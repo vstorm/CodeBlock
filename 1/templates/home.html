@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load comments %}
+{% block title %}
+首页 ｜ CodeBlock
+{% endblock %}
+
+{% block content %}
+{{ block.super }}
+
+
+<div class="row">
+	<div class="span8">
+    <ul class="thumbnails row">
+        {% for press in pressList.object_list %}
+        <li class="span4">
+            <div class="thumbnail">
+                <a href="{{press.id}}"><img src="{{ press.cover }}" alt=""></a><a href="{{press.id}}"><h3 class="text-center">{{press.title}}</h3></a>
+                <p class="text-left">
+                    <strong>
+                    {{press.introduce}}
+                    </strong>
+                </p>
+				<p class="muted">
+					{% get_comment_count for press as comment_count %}
+					<span><a href="category/?c={{press.category.id}}">{{press.category}}</a></span>
+					<span class="pull-right">{{comment_count}}条评论</span>
+				</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+	</div>
+</div>
+{% endblock %}
+{% block pagination %}
+{% if pressList.number > 1 %}
+	<div class="row">
+                <div class="span12">
+                    <div class="pagination pagination-centered pagination-large">
+                        <ul>
+                            {% if pressList.has_previous %}
+                            <li>
+                                <a href="?page={{ pressList.previous_page_number }}" title="pre">上一页</a>
+                            </li>
+                            {% else %}
+                            <li class="disabled">
+                                <span>上一页</span>
+                            </li>
+                            {% endif %}
+                            {% for p in page_range %}
+                            {% if p == pressList.number %}
+                            <li class="active">
+                                <span>{{p}}</span>
+                            </li>
+                            {% else %}
+                            <li>
+                                <a href="?page={{p}}" title="page {{p}}">{{p}}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                            {% if pressList.has_next %}
+                            <li>
+                                <a href="?page={{ pressList.next_page_number }}" title="next">下一页</a>
+                            </li>
+                            {% else %}
+                            <li class="disabled">
+                                <span>下一页</span>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+{% endif %}
+{% endblock %}

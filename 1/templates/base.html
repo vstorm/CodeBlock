@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name=”description” content="CodeBlock精选国外有关编程的博客文章翻译">
+		<meta name=”keyword” content="编程,IT,英文翻译,博客">
+        <title> {% block title %}{% endblock %}</title>
+        {% load staticfiles %}
+		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
+        <link href="http://lib.sinaapp.com/js/bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://lib.sinaapp.com/js/bootstrap/2.3.1/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="{% static 'site/site.css' %}" rel="stylesheet" />
+        <script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js">
+        </script>
+        <script src="http://lib.sinaapp.com/js/bootstrap/2.3.1/js/bootstrap.min.js">
+        </script>
+		<script src="{% static 'site/js/site.js' %}"></script>
+        {% block header %}{% endblock %}
+    </head>
+    <body>
+    	<div id="wrap" class="container">
+    			<div class="row">
+                    <div class="span8">
+    				<h2><a href="/">CodeBlock</a></h2>
+                    </div>
+    			</div>
+            	<div class="row">
+                <div class="span8">
+                    <ul class="nav nav-tabs">
+                        <li>
+                            <a href="/">首页</a>
+                        </li>
+                        <li>
+                            <a href="/category/">分类</a>
+                        </li>
+                        <li>
+                            <a href="/archive/">归档</a>
+                        </li>
+                        <li>
+                            <a href="/feed/">RSS订阅</a>
+                        </li>
+                        <!--
+                        <li>
+                        <a href="#">新浪微薄</a>
+                        </li>
+                        <li>
+                        <a href="#">写信给我</a>
+                        </li>
+                        <li>
+                        <a href="#">关于本站</a>
+                        </li>
+                        -->
+                    </ul>
+                </div>
+            </div>
+			{% block content %}
+			{% endblock %}
+			{% block pagination %}
+			{% endblock %}
+			<div id="push"></div>
+			</div>
+			<div id="footer" class="container">
+	            <div class="row">
+	                <div class="span3 muted footerborder">
+	                	<p>本网站以翻译国外有关编程方面的文章为主，由本人vstorm维护</p>
+	                </div>
+	                <div class="span2 muted footerborder">
+	                	<p>本站为
+							<a href="http://www.gnu.org/licenses/gpl.html">GPL</a>
+							开源网站,源码地址：<a href="https://github.com/vstorm/CodeBlock">GitHub</a></p>
+	                </div>
+	                <div class="span3 muted">
+	                	<p>本站运行在新浪提供的
+						<a href="http://sae.sina.com.cn/?m=front">SAE</a>
+						上</p>
+	                </div>
+	            </div>
+			</div>
+    </body>
+</html>
