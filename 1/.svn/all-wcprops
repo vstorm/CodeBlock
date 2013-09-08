@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/codeblock/!svn/ver/119/1
+END
+config.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/codeblock/!svn/ver/119/1/config.yaml
+END
+.pydevproject
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/codeblock/!svn/ver/16/1/.pydevproject
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/codeblock/!svn/ver/5/1/manage.py
+END
+index.wsgi
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/codeblock/!svn/ver/2/1/index.wsgi
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/codeblock/!svn/ver/16/1/.project
+END

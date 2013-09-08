@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/codeblock/!svn/ver/80/1/codeblock
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/codeblock/!svn/ver/18/1/codeblock/urls.py
+END
+wsgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/codeblock/!svn/ver/5/1/codeblock/wsgi.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/codeblock/!svn/ver/5/1/codeblock/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/codeblock/!svn/ver/120/1/codeblock/settings.py
+END

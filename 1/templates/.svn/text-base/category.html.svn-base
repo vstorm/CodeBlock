@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}
+	分类 ｜ CodeBlock
+{% endblock %}
+
+{% load comments %}
+{% block content %}
+<div class="row">
+	<div class="span5">
+    <div class="tabbable tabs-left">
+        <!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs">
+            {% for c in category %}
+        	<li 
+				{%if cid %}
+					{% ifequal cid c.id %}
+						class = "active"
+					{% endifequal %}
+				{% else %}
+					{%  if forloop.first %}
+						class  = "active"
+					{% endif %}
+				{% endif %}>
+				<a href="#{{c.cname_en}}"  data-toggle="tab">
+            	{{c}}({{c.press_set.count}})
+            	</a>
+        	</li>
+        	{% endfor %}
+        </ul>
+        <div class="tab-content">
+            {% for c in category %}
+            <div class="tab-pane {%  if forloop.first %}active{% endif %}" id="{{c.cname_en}}">
+    		{% for article in c.press_set.all %}
+			{% get_comment_count for article as comment_count %}
+			<p class="text-center">
+				<a href="/{{article.id}}">{{article.title}}</a>
+				<span>({{comment_count}})</span>
+			</p>
+			{% endfor %}
+            </div>
+			{% endfor %}
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}

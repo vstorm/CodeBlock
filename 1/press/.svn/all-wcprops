@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/codeblock/!svn/ver/35/1/press
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/codeblock/!svn/ver/6/1/press/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/codeblock/!svn/ver/35/1/press/models.py
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/codeblock/!svn/ver/27/1/press/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/codeblock/!svn/ver/27/1/press/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/codeblock/!svn/ver/6/1/press/__init__.py
+END

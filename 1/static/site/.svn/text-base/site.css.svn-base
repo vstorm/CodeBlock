@@ -1,0 +1,38 @@
+html,body{
+	height:100%;
+}
+
+.atricle p{text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/}
+
+.atricle img{
+	padding-left:20px;
+}
+
+p.lead{text-indent:0;}
+
+.border{
+	border-top:1px solid #ccc;
+}
+
+.padding {
+	margin:10px 0 10px 0;
+}
+
+.container{
+	max-width:780px;
+}
+
+#wrap {
+	height:100%;
+	height: auto !important;
+	margin:0 auto -60px;
+	min-height:100%;
+}
+
+#push,#footer{
+	height:60px;
+}
+
+.footerborder{
+	border-right:1px solid #DDDDDD;
+}

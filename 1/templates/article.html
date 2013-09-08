@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load comments %}
+
+
+{% block title %}
+	{{ article.title }} | CodeBlock
+{% endblock %}
+
+{% block header %}
+{% load staticfiles %}
+	<script src="{% static 'site/js/comment.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="row atricle">
+		<div class="span8">
+			<h1 class="text-center">{{article.title}}</h1>
+			<p>{{article.content|safe}}</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="border span8">
+			{% get_comment_count for article as comment_count %}
+			<p class="padding">《{{article.title}}》共有<strong>{{comment_count}}</strong>条评论</p>
+		</div>
+	</div>
+	{% render_comment_list for article %}
+	<div class="row">
+		<h4 id="reply_anchor" class="span6">你的回应</h4>
+	</div>
+	<div class="row">
+		<div class="span6" id="replycontent">
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6" id="comment_form">
+		{% render_comment_form for article %}
+		</div>
+	</div>
+</div>
+{% endblock %}

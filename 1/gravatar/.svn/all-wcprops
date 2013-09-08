@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/codeblock/!svn/ver/27/1/gravatar
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/codeblock/!svn/ver/18/1/gravatar/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/codeblock/!svn/ver/18/1/gravatar/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/codeblock/!svn/ver/18/1/gravatar/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/codeblock/!svn/ver/18/1/gravatar/models.py
+END

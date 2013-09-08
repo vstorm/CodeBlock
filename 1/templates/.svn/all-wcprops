@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/codeblock/!svn/ver/44/1/templates
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/codeblock/!svn/ver/134/1/templates/base.html
+END
+cate.html
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/codeblock/!svn/ver/16/1/templates/cate.html
+END
+category.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/codeblock/!svn/ver/20/1/templates/category.html
+END
+archive.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/codeblock/!svn/ver/17/1/templates/archive.html
+END
+article.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/codeblock/!svn/ver/44/1/templates/article.html
+END
+500.html
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/codeblock/!svn/ver/133/1/templates/500.html
+END
+404.html
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/codeblock/!svn/ver/133/1/templates/404.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/codeblock/!svn/ver/41/1/templates/home.html
+END
