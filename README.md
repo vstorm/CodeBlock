@@ -14,5 +14,5 @@ python+Django搭建在SAE上的个人网站，以翻译国外编程文章为主
 
 
 ###注意
-+ settting.py中的MySQL_DB变量修改成你的相应的应用名
++ settting.py中的 MySQL_DB变量修改成 app_你的应用名
 + 后台修改site为你的域名
